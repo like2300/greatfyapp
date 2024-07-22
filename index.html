@@ -29,22 +29,22 @@
         AOS.init();
     </script>
 </head>
-<body>
+<body class="bg-gradient-to-r from-primary-500 to-white dark:from-black dark:to-gray-900">
 
-    <nav id="nav" class="shadow-md z-30 bg-white flex flex-col md:flex-row text-center md:justify-around  
-    md:items-center  fixed -left-0 -top-0   w-full ">
+    <nav class="shadow-md z-30 bg-white flex flex-col  dark:text-white dark:bg-gray-900 md:flex-row text-center md:justify-around  
+    md:items-center  fixed -left-0 -top-0   w-full " id="nav">
 
     <div class="logo flex items-center justify-space-between ">
-        <a href="/" class="hover:text-gray-900  m-4  font-bold text-4xl md:text-5xl md:mb-5">Greatfy</a>
-        <div id="btn-close-nav" onclick="closeNav()" class="w-full mr-4 "  ></div>
-            <i   data-feather="menu" class="text-gray-900 md:hidden  hover:text-gray-700
-             hover:scale-110 transition-all mr-4  "></i>
+        <a class="hover:text-gray-900  m-4 dark:hover:text-gray-600 font-bold text-4xl md:text-5xl md:mb-5" href="/">Greatfy</a>
+        <div class="w-full mr-4 " id="btn-close-nav" onclick="closeNav()"></div>
+            <i class="text-gray-900 md:hidden  hover:text-gray-700
+             hover:scale-110 transition-all mr-4  " data-feather="menu"></i>
         </div>
-    </div>
+    
         
 
 
-    <script defer>
+    <script defer="">
         const nav = document.getElementById("nav") 
         const list = document.getElementById("nav-list")
         const btnClose = document.getElementById("btn-close-nav")
@@ -63,29 +63,29 @@
 
     </script>
        
-        <ul id="nav-list" class="md:flex opacity-0 md:opacity-100  hidden  md:flex-wrap items-center justify-center md:justify-around">
+        <ul class="md:flex opacity-0 md:opacity-100  hidden  md:flex-wrap items-center justify-center md:justify-around" id="nav-list">
             <li class="md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">Accueil</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">Accueil</a>
             </li>
             <br class="md:hidden">
             <li class=" md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent  md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">A propos</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">A propos</a>
             </li>
             <br class="md:hidden">
             <li class="md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">Nos service</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">Nos service</a>
             </li>
             <br class="md:hidden">
             <li class="md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">Nos partenaires</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">Nos partenaires</a>
             </li>
             <br class="md:hidden">
             <li class=" md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">Notre équipe</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">Notre équipe</a>
             </li>
             <br class="md:hidden">
             <li class=" md:px-3 md:py-2 text-gray-700 border-b-2 border-transparent md:hover:text-gray-900 md:hover:border-gray-900">
-                <a href="#" class="hover:text-gray-900">Contact nous</a>
+                <a class="hover:text-gray-900 dark:hover:text-white" href="#">Contact nous</a>
             </li>
             <br class="md:hidden"> <br class="md:hidden">   
         </ul>
@@ -115,28 +115,28 @@
         <div class="pt-36">
             <div class="mx-auto px-6 max-w-6xl text-gray-500">
                 <div class="text-center">
-                    <h2 class="text-3xl text-gray-950   font-semibold">Nos services</h2>
+                    <h2 class="text-3xl text-gray-950  dark:text-white  font-semibold">Nos services</h2>
                     <p class="mt-6 text-gray-700 ">voici quelques de nos services que nous proposons</p>
                 </div>
                 <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-primary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-primary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-primary-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-primary-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                                 <svg class="text-[#000014] dark:text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
                                     <defs>
                                         <linearGradient id="deviconAstro0" x1="882.997" x2="638.955" y1="27.113" y2="866.902" gradientTransform="scale(.1)" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="currentColor"/>
-                                            <stop offset="1" stop-color="currentColor"/>
+                                            <stop offset="0" stop-color="currentColor"></stop>
+                                            <stop offset="1" stop-color="currentColor"></stop>
                                         </linearGradient>
                                         <linearGradient id="deviconAstro1" x1="1001.68" x2="790.326" y1="652.45" y2="1094.91" gradientTransform="scale(.1)" gradientUnits="userSpaceOnUse">
-                                            <stop offset="0" stop-color="#ff1639"/>
-                                            <stop offset="1" stop-color="#ff1639" stop-opacity="0"/>
+                                            <stop offset="0" stop-color="#ff1639"></stop>
+                                            <stop offset="1" stop-color="#ff1639" stop-opacity="0"></stop>
                                         </linearGradient>
                                     </defs>
-                                    <path fill="url(#deviconAstro0)" d="M81.504 9.465c.973 1.207 1.469 2.836 2.457 6.09l21.656 71.136a90.079 90.079 0 0 0-25.89-8.765L65.629 30.28a1.833 1.833 0 0 0-3.52.004L48.18 77.902a90.104 90.104 0 0 0-26.003 8.778l21.758-71.14c.996-3.25 1.492-4.876 2.464-6.083a8.023 8.023 0 0 1 3.243-2.398c1.433-.575 3.136-.575 6.535-.575H71.72c3.402 0 5.105 0 6.543.579a7.988 7.988 0 0 1 3.242 2.402Zm0 0"/>
-                                    <path fill="#ff5d01" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"/>
-                                    <path fill="url(#deviconAstro1)" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"/>
+                                    <path fill="url(#deviconAstro0)" d="M81.504 9.465c.973 1.207 1.469 2.836 2.457 6.09l21.656 71.136a90.079 90.079 0 0 0-25.89-8.765L65.629 30.28a1.833 1.833 0 0 0-3.52.004L48.18 77.902a90.104 90.104 0 0 0-26.003 8.778l21.758-71.14c.996-3.25 1.492-4.876 2.464-6.083a8.023 8.023 0 0 1 3.243-2.398c1.433-.575 3.136-.575 6.535-.575H71.72c3.402 0 5.105 0 6.543.579a7.988 7.988 0 0 1 3.242 2.402Zm0 0"></path>
+                                    <path fill="#ff5d01" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"></path>
+                                    <path fill="url(#deviconAstro1)" d="M84.094 90.074c-3.57 3.055-10.696 5.137-18.903 5.137c-10.07 0-18.515-3.137-20.754-7.356c-.8 2.418-.98 5.184-.98 6.954c0 0-.527 8.675 5.508 14.71a5.671 5.671 0 0 1 5.672-5.671c5.37 0 5.367 4.683 5.363 8.488v.336c0 5.773 3.527 10.719 8.543 12.805a11.62 11.62 0 0 1-1.172-5.098c0-5.508 3.23-7.555 6.988-9.938c2.989-1.894 6.309-4 8.594-8.222a15.513 15.513 0 0 0 1.875-7.41a15.55 15.55 0 0 0-.734-4.735m0 0"></path>
                                 </svg>
                             </div>
 
@@ -145,22 +145,22 @@
                             </div>
 
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div href="#" class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-success-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                    <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]" href="#">
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-success-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-success-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-success-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em" viewBox="0 0 256 263"><defs><linearGradient id="logosSupabaseIcon0" x1="20.862%" x2="63.426%" y1="20.687%" y2="44.071%"><stop offset="0%" stop-color="#249361"/><stop offset="100%" stop-color="#3ecf8e"/></linearGradient><linearGradient id="logosSupabaseIcon1" x1="1.991%" x2="21.403%" y1="-13.158%" y2="34.708%"><stop offset="0%"/><stop offset="100%" stop-opacity="0"/></linearGradient></defs><path fill="url(#logosSupabaseIcon0)" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"/><path fill="url(#logosSupabaseIcon1)" fill-opacity="0.2" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"/><path fill="#3ecf8e" d="M106.399 4.37c6.717-8.461 20.338-3.826 20.5 6.976l1.037 157.984H23.037c-19.241 0-29.973-22.223-18.008-37.292z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em" viewBox="0 0 256 263"><defs><linearGradient id="logosSupabaseIcon0" x1="20.862%" x2="63.426%" y1="20.687%" y2="44.071%"><stop offset="0%" stop-color="#249361"></stop><stop offset="100%" stop-color="#3ecf8e"></stop></linearGradient><linearGradient id="logosSupabaseIcon1" x1="1.991%" x2="21.403%" y1="-13.158%" y2="34.708%"><stop offset="0%"></stop><stop offset="100%" stop-opacity="0"></stop></linearGradient></defs><path fill="url(#logosSupabaseIcon0)" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"></path><path fill="url(#logosSupabaseIcon1)" fill-opacity="0.2" d="M149.602 258.579c-6.718 8.46-20.338 3.824-20.5-6.977l-2.367-157.984h106.229c19.24 0 29.971 22.223 18.007 37.292z"></path><path fill="#3ecf8e" d="M106.399 4.37c6.717-8.461 20.338-3.826 20.5 6.976l1.037 157.984H23.037c-19.241 0-29.973-22.223-18.008-37.292z"></path></svg>
                             </div>
 
                             <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
@@ -168,101 +168,101 @@
                             </div>
 
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-danger-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-danger-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-danger-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-danger-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="0.95em" height="1em" viewBox="0 0 256 271"><defs><linearGradient id="logosAngularIcon0" x1="25.071%" x2="96.132%" y1="90.929%" y2="55.184%"><stop offset="0%" stop-color="#e40035"/><stop offset="24%" stop-color="#f60a48"/><stop offset="35.2%" stop-color="#f20755"/><stop offset="49.4%" stop-color="#dc087d"/><stop offset="74.5%" stop-color="#9717e7"/><stop offset="100%" stop-color="#6c00f5"/></linearGradient><linearGradient id="logosAngularIcon1" x1="21.863%" x2="68.367%" y1="12.058%" y2="68.21%"><stop offset="0%" stop-color="#ff31d9"/><stop offset="100%" stop-color="#ff5be1" stop-opacity="0"/></linearGradient></defs><path fill="url(#logosAngularIcon0)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"/><path fill="url(#logosAngularIcon1)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.95em" height="1em" viewBox="0 0 256 271"><defs><linearGradient id="logosAngularIcon0" x1="25.071%" x2="96.132%" y1="90.929%" y2="55.184%"><stop offset="0%" stop-color="#e40035"></stop><stop offset="24%" stop-color="#f60a48"></stop><stop offset="35.2%" stop-color="#f20755"></stop><stop offset="49.4%" stop-color="#dc087d"></stop><stop offset="74.5%" stop-color="#9717e7"></stop><stop offset="100%" stop-color="#6c00f5"></stop></linearGradient><linearGradient id="logosAngularIcon1" x1="21.863%" x2="68.367%" y1="12.058%" y2="68.21%"><stop offset="0%" stop-color="#ff31d9"></stop><stop offset="100%" stop-color="#ff5be1" stop-opacity="0"></stop></linearGradient></defs><path fill="url(#logosAngularIcon0)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"></path><path fill="url(#logosAngularIcon1)" d="m256 45.179l-9.244 145.158L158.373 0zm-61.217 187.697l-66.782 38.105l-66.784-38.105L74.8 199.958h106.4zM128.001 72.249l34.994 85.076h-69.99zM9.149 190.337L0 45.179L97.627 0z"></path></svg>
                             </div>
 
                             <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
                                 <p class="text-gray-700 dark:text-gray-300">Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.</p>
                             </div>
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-gray-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-gray-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-gray-500/10 flex relative *:relative *:size-6 *:m-auto  text-gray-950 dark:text-white size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-gray-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="m4.5 4.5l.405-.293A.5.5 0 0 0 4 4.5zm3 9.5A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 1A6.5 6.5 0 0 1 14 7.5h1A7.5 7.5 0 0 0 7.5 0zm0-1A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zM5 12V4.5H4V12zm-.905-7.207l6.5 9l.81-.586l-6.5-9zM10 4v6h1V4z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15"><path fill="currentColor" d="m4.5 4.5l.405-.293A.5.5 0 0 0 4 4.5zm3 9.5A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 1A6.5 6.5 0 0 1 14 7.5h1A7.5 7.5 0 0 0 7.5 0zm0-1A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zM5 12V4.5H4V12zm-.905-7.207l6.5 9l.81-.586l-6.5-9zM10 4v6h1V4z"></path></svg>
                             </div>
 
                             <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
                                 <p class="text-gray-700 dark:text-gray-300">Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.</p>
                             </div>
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-warning-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-warning-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-warning-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-warning-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="0.73em" height="1em" viewBox="0 0 256 351"><defs><filter id="logosFirebase0" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="17.5"/><feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/></filter><filter id="logosFirebase1" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="3.5"/><feOffset dx="1" dy="-9" in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/></filter><path id="logosFirebase2" d="m1.253 280.732l1.605-3.131l99.353-188.518l-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188z"/><path id="logosFirebase3" d="m134.417 148.974l32.039-32.812l-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109l-.53 1.744z"/></defs><path fill="#ffc24a" d="m0 282.998l2.123-2.972L102.527 89.512l.212-2.017L58.48 4.358C54.77-2.606 44.33-.845 43.114 6.951z"/><use fill="#ffa712" fill-rule="evenodd" href="#logosFirebase2"/><use filter="url(#logosFirebase0)" href="#logosFirebase2"/><path fill="#f4bd62" d="m135.005 150.38l32.955-33.75l-32.965-62.93c-3.129-5.957-11.866-5.975-14.962 0L102.42 87.287v2.86z"/><use fill="#ffa50e" fill-rule="evenodd" href="#logosFirebase3"/><use filter="url(#logosFirebase1)" href="#logosFirebase3"/><path fill="#f6820c" d="m0 282.998l.962-.968l3.496-1.42l128.477-128l1.628-4.431l-32.05-61.074z"/><path fill="#fde068" d="m139.121 347.551l116.275-64.847l-33.204-204.495c-1.039-6.398-8.888-8.927-13.468-4.34L0 282.998l115.608 64.548a24.126 24.126 0 0 0 23.513.005"/><path fill="#fcca3f" d="M254.354 282.16L221.402 79.218c-1.03-6.35-7.558-8.977-12.103-4.424L1.29 282.6l114.339 63.908a23.943 23.943 0 0 0 23.334.006z"/><path fill="#eeab37" d="M139.12 345.64a24.126 24.126 0 0 1-23.512-.005L.931 282.015l-.93.983l115.607 64.548a24.126 24.126 0 0 0 23.513.005l116.275-64.847l-.285-1.752z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="0.73em" height="1em" viewBox="0 0 256 351"><defs><filter id="logosFirebase0" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="17.5"><feOffset in="shadowBlurInner1" result="shadowOffsetInner1"><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" in="shadowInnerInner1"></feColorMatrix></feComposite></feOffset></feGaussianBlur></filter><filter id="logosFirebase1" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="3.5"><feOffset dx="1" dy="-9" in="shadowBlurInner1" result="shadowOffsetInner1"><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" in="shadowInnerInner1"></feColorMatrix></feComposite></feOffset></feGaussianBlur></filter><path id="logosFirebase2" d="m1.253 280.732l1.605-3.131l99.353-188.518l-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188z"></path><path id="logosFirebase3" d="m134.417 148.974l32.039-32.812l-32.039-61.007c-3.042-5.791-10.433-6.398-13.443-.59l-17.705 34.109l-.53 1.744z"></path></defs><path fill="#ffc24a" d="m0 282.998l2.123-2.972L102.527 89.512l.212-2.017L58.48 4.358C54.77-2.606 44.33-.845 43.114 6.951z"></path><use href="#logosFirebase2" fill="#ffa712" fill-rule="evenodd"></use><use href="#logosFirebase2" filter="url(#logosFirebase0)"></use><path fill="#f4bd62" d="m135.005 150.38l32.955-33.75l-32.965-62.93c-3.129-5.957-11.866-5.975-14.962 0L102.42 87.287v2.86z"></path><use href="#logosFirebase3" fill="#ffa50e" fill-rule="evenodd"></use><use href="#logosFirebase3" filter="url(#logosFirebase1)"></use><path fill="#f6820c" d="m0 282.998l.962-.968l3.496-1.42l128.477-128l1.628-4.431l-32.05-61.074z"></path><path fill="#fde068" d="m139.121 347.551l116.275-64.847l-33.204-204.495c-1.039-6.398-8.888-8.927-13.468-4.34L0 282.998l115.608 64.548a24.126 24.126 0 0 0 23.513.005"></path><path fill="#fcca3f" d="M254.354 282.16L221.402 79.218c-1.03-6.35-7.558-8.977-12.103-4.424L1.29 282.6l114.339 63.908a23.943 23.943 0 0 0 23.334.006z"></path><path fill="#eeab37" d="M139.12 345.64a24.126 24.126 0 0 1-23.512-.005L.931 282.015l-.93.983l115.607 64.548a24.126 24.126 0 0 0 23.513.005l116.275-64.847l-.285-1.752z"></path></svg>
                             </div>
 
                             <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
                                 <p class="text-gray-700 dark:text-gray-300">Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.</p>
                             </div>
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
-                        <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
+                        <div class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10" aria-hidden="true"></div>
                         <div class="relative">
                             <div class="border border-info-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-info-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><path fill="#0080ff" d="M64.142 102.96H39.24V78.522h24.903ZM39.24 122.131H20.373v-19.173H39.24Zm-18.866-19.173H4.53V87.167h15.843Zm43.394 24.814v-24.814c26.41 0 46.784-25.94 36.597-53.388c-3.775-10.15-11.694-18.42-22.26-22.181c-27.167-9.772-53.2 10.527-53.2 36.468H0c0-41.354 40.37-74.064 84.52-60.53c19.242 6.017 34.334 21.055 40.37 40.23c13.581 43.985-19.245 84.214-61.123 84.214Zm0 0"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><path fill="#0080ff" d="M64.142 102.96H39.24V78.522h24.903ZM39.24 122.131H20.373v-19.173H39.24Zm-18.866-19.173H4.53V87.167h15.843Zm43.394 24.814v-24.814c26.41 0 46.784-25.94 36.597-53.388c-3.775-10.15-11.694-18.42-22.26-22.181c-27.167-9.772-53.2 10.527-53.2 36.468H0c0-41.354 40.37-74.064 84.52-60.53c19.242 6.017 34.334 21.055 40.37 40.23c13.581 43.985-19.245 84.214-61.123 84.214Zm0 0"></path></svg>
                             </div>
 
                             <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
                                 <p class="text-gray-700 dark:text-gray-300">Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.</p>
                             </div>
                             <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                <a class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center" href="#" download="/">
                                     <span>Download</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
                                 </a>
-                                <a href="" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
+                                <a class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center" href>
                                     <span class="sr-only">Source Code</span>
-                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                                    <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
                                 </a>
                             </div>
                         </div>
@@ -283,52 +283,36 @@
 
     <section>
         <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20 flex flex-col">
-            <h2 class="font-bold text-2xl md:text-6xl flex flex-col text-center pb-5">
+            <h2 class="font-bold dark:text-white text-2xl md:text-6xl flex flex-col text-center pb-5">
                 Voici quelques un de nos partenaires
             </h2>
             <span class="pb-20 max-w-[600px] text-gray-400 mx-auto text-center block pb-20">
                 Chaque entreprise qui nous soutient et contribue à notre projet depuis la création de <a class="font-bold hover:text-gray-700" href="/">Greatfy</a> joue un rôle crucial grâce à leur partenariat. Leur engagement continu nous permet de progresser et d'innover, et nous leur en sommes profondément reconnaissants.
             </span>
             <ul class="grid grid-cols-8 gap-10 items-center mx-auto mb-10">
-                <li data-aos="fade-down" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="100" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="100">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="200" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="200">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="300" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="300">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="400" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="400">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="500" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="500">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="600" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="600">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png" alt>
                 </li>
-                <li data-aos="fade-down" data-aos-delay="700" class="col-span-4 md:col-span-2">
-                    <img class="grayscale hover:grayscale-0 max-w-[140px]"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
-                        alt="">
+                <li class="col-span-4 md:col-span-2" data-aos="fade-down" data-aos-delay="700">
+                    <img class="grayscale hover:grayscale-0 max-w-[140px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt>
                 </li>
             </ul>
         </div>
@@ -348,42 +332,42 @@
         <div class="pb-36">
             <div class="mx-auto px-6 max-w-6xl text-gray-500">
                 <div class="text-center">
-                    <h2 class="font-bold text-2xl text-black md:text-6xl flex flex-col text-center pb-5"> L'equipe de Greatfy</h2>
+                    <h2 class="font-bold text-2xl text-black dark:text-white md:text-6xl flex flex-col text-center pb-5"> L'equipe de Greatfy</h2>
                     <p class="mt-6  text-gray-600">le menbre de l'équipe de Greatfy qui nous ont permis de faire de la solution innovante <br> et de la technologie qui nous permet de travailler ensemble.</p>
                 </div>
                 <div class="mt-12 max-w-lg mx-auto flex justify-center flex-wrap gap-3">
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/2.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/3.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/4.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/4.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/5.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/5.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/6.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/6.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/7.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/8.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/8.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/9.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/9.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
-                    <a href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" class="size-16 rounded-full border border-gray-950/5 dark:border-white/5">
-                        <img alt="John Doe" src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-full" loading="lazy" width="120" height="120">
+                    <a class="size-16 rounded-full border border-gray-950/5 dark:border-white/5" href="https://github.com/meschacirung" title="Méschac Irung" target="_blank">
+                        <img class="rounded-full" src="https://randomuser.me/api/portraits/men/10.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                     </a>
                 </div>
             </div>
@@ -403,7 +387,7 @@
         <div class="py-36">
             <div class="mx-auto px-6 max-w-6xl text-gray-500">
                 <div class="text-center">
-                    <h2 class="text-3xl text-gray-950 dark:text-black font-semibold">voici quelques de info sur les menbres de Greatfy</h2>
+                    <h2 class="text-3xl text-gray-950   dark:text-white font-semibold">voici quelques de info sur les menbres de Greatfy</h2>
                     <p class="mt-6 text-gray-700 dark:text-gray-300"></p>
                 </div>
                 <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -411,7 +395,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/1.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Jonathan Yombo</h3>
@@ -428,7 +412,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/6.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/6.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Yves Kalume</h3>
@@ -445,7 +429,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/7.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/7.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Yucel Faruksahan</h3>
@@ -462,7 +446,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/8.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/8.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Anonymous author</h3>
@@ -481,7 +465,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/4.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/4.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Shekinah Tshiokufila</h3>
@@ -499,7 +483,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/2.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/2.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Oketa Fred</h3>
@@ -517,7 +501,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/5.jpg">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/5.jpg" alt="John Doe">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Zeki</h3>
@@ -534,7 +518,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/9.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/9.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Joseph Kitheka</h3>
@@ -552,7 +536,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/10.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/10.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Khatab Wedaa</h3>
@@ -568,7 +552,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/11.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/11.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Rodrigo Aguilar</h3>
@@ -584,7 +568,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/12.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/12.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Eric Ampire</h3>
@@ -600,7 +584,7 @@
                         <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                             <div class="flex gap-3">
                                 <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/13.jpg" loading="lazy" width="120" height="120">
+                                    <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" src="https://randomuser.me/api/portraits/men/13.jpg" alt="John Doe" loading="lazy" width="120" height="120">
                                 </span>
                                 <div class="w-[calc(100%-3.25rem)]">
                                     <h3 class="font-medium text-gray-950 dark:text-white">Roland Tubonge</h3>
@@ -638,39 +622,39 @@
         <div class="container max-w-screen-xl mx-auto px-4">
 
             <div class="text-center">
-                <h1 class="font-bold text-2xl md:text-6xl flex flex-col text-center pb-5">Greatfy</h1>
+                <h1 class="font-bold text-2xl md:text-6xl dark:text-white flex flex-col text-center pb-5">Greatfy</h1>
 
                 <p class="font-normal text-gray-400 text-md md:text-lg mb-20">tous une socite a votre service ,nous vous suivant aidons a travaire nos solutions innovantes 
                     <br> et vous permettre de vous concentrer sur vos objectifs.</p>
 
                 <div class="flex items-center justify-center space-x-8">
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="twitter" class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500" data-feather="twitter"></i>
                     </a>
 
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="dribbble" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500" data-feather="dribbble"></i>
                     </a>
 
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="facebook" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500" data-feather="facebook"></i>
                     </a>
 
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="codepen" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500" data-feather="codepen"></i>
                     </a>
 
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="at-sign" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500" data-feather="at-sign"></i>
                     </a>
 
-                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="instagram" class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
+                    <a class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500" href="#">
+                        <i class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500" data-feather="instagram"></i>
                     </a>
                 </div>
 
                 <br><br><br><br>
-                <p>© <script>document.write(new Date().getFullYear())</script> Greatfy - All rights reserved - <a class="hover:text-gray-700" href="https://www.greatfy.com">www.greatfy.com</a></p>
+                <p class="dark:text-gray-400">© <script>document.write(new Date().getFullYear())</script> Greatfy - All rights reserved - <a class="hover:text-gray-700" href="https://www.greatfy.com">www.greatfy.com</a></p>
             </div>
 
         </div>
